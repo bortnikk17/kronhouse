@@ -2,7 +2,7 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Главная страница</title><!--[if IE]>
+    <title>Kronhouse</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="keywords" content="#{title}">
@@ -12,9 +12,13 @@
     <link rel="preload" href="static/fonts/Montserrat-Bold.woff2" as="font" type="font/woff2" crossorigin="">
     <link rel="preload" href="static/fonts/Montserrat-Regular.woff2" as="font" type="font/woff2" crossorigin="">
     <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
     <!-- CSS-->
-    <link rel="stylesheet" type="text/css" href="static/css/libs.min.css?v=647">
-    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=131">
+    <link rel="stylesheet" type="text/css" href="static/css/libs.min.css?v=376">
+    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=101">
     <!-- - CSS links PROD
     link(rel="stylesheet preload" type='text/css' href="static/css/libs.min.css" as="style")
     link(rel="stylesheet preload" type='text/css' href="static/css/main.min.css" as="style")
@@ -31,16 +35,16 @@
             <div class="header__menu">
               <div class="header-menu__close"> 
                 <svg class="icon icon-close ">
-                  <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#close"></use>
+                  <use href="static/img/svg-sprites/symbol/sprite.svg#close"></use>
                 </svg>
               </div>
               <div class="header__links"> <a class="header__link anchor-trigger" href="#" data-target="works">Наши работы</a><a class="header__link anchor-trigger" href="#" data-target="material">Материалы</a><a class="header__link anchor-trigger" href="#" data-target="show">Шоу-рум</a><a class="header__link anchor-trigger" href="#" data-target="factory">Этапы производства</a><a class="header__link anchor-trigger" href="#" data-target="contact">Контакты</a></div>
               <div class="header__contacts-hide"><a class="header__number" href="tel:+7(499)555-55-55">+7(499) 555-55-55</a>
-                <button class="header__call-btn call-trigger" type="button">Перезвоните мне</button>
+                <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона">Перезвоните мне</button>
               </div>
             </div>
             <div class="header__contacts"> <a class="header__number" href="tel:+7(499)555-55-55">+7(499) 555-55-55</a>
-              <button class="header__call-btn call-trigger" type="button">Перезвоните мне</button>
+              <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона">Перезвоните мне</button>
             </div>
             <div class="header__burger"> </div>
           </div>
@@ -69,9 +73,9 @@
               </div>
               <div class="hero__bottom">
                 <div class="hero__text">Узнайте какая лестница идеально подойдет для вашего дома и сколько можно сэкономить именно в Вашем случае с помощью консультации и замера от специалиста с опытом строительства <span>293 лестниц!</span></div>
-                <button class="hero-consult__btn call-trigger" type="button"> <span>Получить консультацию</span>
+                <button class="hero-consult__btn call-trigger" type="button" data-target="Кнопка консультации"> <span>Получить консультацию</span>
                   <svg class="icon icon-arrow ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                   </svg>
                 </button>
               </div>
@@ -82,7 +86,7 @@
           <div class="about__container"> 
             <div class="about__item"> 
               <svg class="icon icon-stairs ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#stairs"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#stairs"></use>
               </svg>
               <div class="item__inner"> 
                 <div class="borders"> </div>
@@ -93,7 +97,7 @@
             </div>
             <div class="about__item"> 
               <svg class="icon icon-cube ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#cube"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#cube"></use>
               </svg>
               <div class="item__inner"> 
                 <div class="borders"> </div>
@@ -104,7 +108,7 @@
             </div>
             <div class="about__item"> 
               <svg class="icon icon-doc ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#doc"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#doc"></use>
               </svg>
               <div class="item__inner"> 
                 <div class="borders"> </div>
@@ -131,7 +135,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -142,7 +146,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -153,7 +157,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -162,9 +166,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;63 000 ₽&quot;, &quot;sheating_price&quot;: &quot;164 600 ₽&quot;, &quot;all_price&quot;:&quot;227 600 ₽&quot;, &quot;name&quot;:&quot;Лестница в КП Долина Озер&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;двойной косоур + площадка&quot;, &quot;material&quot;:&quot;профильная труба&quot;, &quot;height&quot;:&quot;3200 мм&quot;, &quot;stairs&quot;:&quot;ясень 40 мм&quot;, &quot;border&quot;:&quot;металлические&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/sf1&quot;}, {&quot;src&quot;:&quot;static/img/content/sf2&quot;}, {&quot;src&quot;:&quot;static/img/content/sf3&quot;}, {&quot;src&quot;:&quot;static/img/content/sf4&quot;}, {&quot;src&quot;:&quot;static/img/content/sf5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -181,7 +185,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -192,7 +196,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -203,7 +207,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -212,9 +216,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;78 000 ₽&quot;, &quot;sheating_price&quot;: &quot;260 000 ₽&quot;, &quot;all_price&quot;:&quot;338 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в д. Якиманское&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;закрытый каркас&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3400 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;Деревянные&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/st1&quot;}, {&quot;src&quot;:&quot;static/img/content/st2&quot;}, {&quot;src&quot;:&quot;static/img/content/st3&quot;}, {&quot;src&quot;:&quot;static/img/content/st4&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -231,7 +235,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -242,7 +246,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -253,7 +257,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -262,9 +266,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;115 000 ₽&quot;, &quot;sheating_price&quot;: &quot;280 000 ₽&quot;, &quot;all_price&quot;:&quot;395 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в д. Азаровка&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;монокосоур + забежные ступени&quot;, &quot;material&quot;:&quot;Х/К лист&quot;, &quot;height&quot;:&quot;3400 мм&quot;, &quot;stairs&quot;:&quot;ясень 60 мм&quot;, &quot;border&quot;:&quot;Стеклянные&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/stt1&quot;}, {&quot;src&quot;:&quot;static/img/content/stt2&quot;}, {&quot;src&quot;:&quot;static/img/content/stt3&quot;}, {&quot;src&quot;:&quot;static/img/content/stt4&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -281,7 +285,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -292,7 +296,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -303,7 +307,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -312,9 +316,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;57 000 ₽&quot;, &quot;sheating_price&quot;: &quot;130 000 ₽&quot;, &quot;all_price&quot;:&quot;187 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в КП Матрёнино&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;каркас + забежные ступени&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3200 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;Ясень&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/sfo1&quot;}, {&quot;src&quot;:&quot;static/img/content/sfo2&quot;}, {&quot;src&quot;:&quot;static/img/content/sfo3&quot;}, {&quot;src&quot;:&quot;static/img/content/sfo4&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -331,7 +335,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -342,7 +346,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -353,7 +357,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -362,9 +366,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;85 000 ₽&quot;, &quot;sheating_price&quot;: &quot;258 000 ₽&quot;, &quot;all_price&quot;:&quot;343 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в КП Олвиль&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;двойной косоур + площадка&quot;, &quot;material&quot;:&quot;профильная труба&quot;, &quot;height&quot;:&quot;3400 мм&quot;, &quot;stairs&quot;:&quot;ясень 40 мм&quot;, &quot;border&quot;:&quot;стеклянные&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/sfi1&quot;}, {&quot;src&quot;:&quot;static/img/content/sfi2&quot;}, {&quot;src&quot;:&quot;static/img/content/sfi3&quot;}, {&quot;src&quot;:&quot;static/img/content/sfi4&quot;}, {&quot;src&quot;:&quot;static/img/content/sfi5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -381,7 +385,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -392,7 +396,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -403,7 +407,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -412,9 +416,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;56 000 ₽&quot;, &quot;sheating_price&quot;: &quot;178 000 ₽&quot;, &quot;all_price&quot;:&quot;234 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в СНТ Субботино&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;тетива + забежные ступени&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3200 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;деревянные, сосна&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/ss1&quot;}, {&quot;src&quot;:&quot;static/img/content/ss2&quot;}, {&quot;src&quot;:&quot;static/img/content/ss3&quot;}, {&quot;src&quot;:&quot;static/img/content/ss4&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -431,7 +435,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -442,7 +446,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -453,7 +457,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -462,9 +466,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;56 000 ₽&quot;, &quot;sheating_price&quot;: &quot;154 000 ₽&quot;, &quot;all_price&quot;:&quot;210 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в ДПК Татьянино&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;тетива + площадка&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3300 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;деревянные, сосна&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/sse1&quot;}, {&quot;src&quot;:&quot;static/img/content/sse2&quot;}, {&quot;src&quot;:&quot;static/img/content/sse3&quot;}, {&quot;src&quot;:&quot;static/img/content/sse4&quot;}, {&quot;src&quot;:&quot;static/img/content/sse5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -481,7 +485,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -492,7 +496,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -503,7 +507,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -512,9 +516,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;63 000 ₽&quot;, &quot;sheating_price&quot;: &quot;208 000 ₽&quot;, &quot;all_price&quot;:&quot;271 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в КП Лесницино&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;тетива + забежные ступени&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3400 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;деревянные, сосна&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/se1&quot;}, {&quot;src&quot;:&quot;static/img/content/se2&quot;}, {&quot;src&quot;:&quot;static/img/content/se3&quot;}, {&quot;src&quot;:&quot;static/img/content/se4&quot;}, {&quot;src&quot;:&quot;static/img/content/se5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -531,7 +535,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -542,7 +546,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -553,7 +557,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -562,9 +566,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;78 000 ₽&quot;, &quot;sheating_price&quot;: &quot;165 000 ₽&quot;, &quot;all_price&quot;:&quot;243 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в КП Сосновый Бор&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;двойной косоур&quot;, &quot;material&quot;:&quot;профильная труба&quot;, &quot;height&quot;:&quot;3600 мм&quot;, &quot;stairs&quot;:&quot;ясень 40 мм&quot;, &quot;border&quot;:&quot;нержавеющая сталь&quot;, &quot;peril&quot;:&quot;нержавеющая сталь&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/sn2&quot;}, {&quot;src&quot;:&quot;static/img/content/sn1&quot;}, {&quot;src&quot;:&quot;static/img/content/sn3&quot;}, {&quot;src&quot;:&quot;static/img/content/sn4&quot;}, {&quot;src&quot;:&quot;static/img/content/sn5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -575,13 +579,13 @@
               <div class="item__block"> 
                 <div class="borders"> </div>
                 <div class="borders-two"></div>
-                <div class="item__name">Лестница в д. никитское</div>
+                <div class="item__name">Лестница в д. Никитское</div>
                 <div class="item__subtitle">Лестница на металлокаркасе</div>
                 <div class="item__row"> 
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-piram ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -592,7 +596,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-tool ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -603,7 +607,7 @@
                   <div class="row__item"> 
                     <div class="item__icon"> 
                       <svg class="icon icon-calc ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
                       </svg>
                     </div>
                     <div class="item__stat"> 
@@ -612,9 +616,9 @@
                     </div>
                   </div>
                 </div>
-                <button class="item__detail-btn" type="button"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
+                <button class="item__detail-btn show-trigger" type="button" data-info="[{&quot;carcass_price&quot;: &quot;65 000 ₽&quot;, &quot;sheating_price&quot;: &quot;213 000 ₽&quot;, &quot;all_price&quot;:&quot;278 000 ₽&quot;, &quot;name&quot;:&quot;Лестница в д. Никитское&quot;, &quot;type&quot;:&quot;Лестница на металлокаркасе&quot;, &quot;config&quot;:&quot;закрытый каркас&quot;, &quot;material&quot;:&quot;швеллер + уголок&quot;, &quot;height&quot;:&quot;3200 мм&quot;, &quot;stairs&quot;:&quot;ясень 30 мм&quot;, &quot;border&quot;:&quot;комбинированные&quot;, &quot;peril&quot;:&quot;Ясень&quot; }]" data-img="[{&quot;src&quot;:&quot;static/img/content/ste1&quot;}, {&quot;src&quot;:&quot;static/img/content/ste2&quot;}, {&quot;src&quot;:&quot;static/img/content/ste3&quot;}, {&quot;src&quot;:&quot;static/img/content/ste4&quot;}, {&quot;src&quot;:&quot;static/img/content/ste5&quot;}]"> <span class="value">Больше фото и подробностей</span><span class="item__icon"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
               </div>
             </div>
@@ -638,17 +642,18 @@
                 <div class="form-item"> 
                   <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
                   <svg class="icon icon-tel ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                   </svg>
                 </div>
+                <input type="hidden" value="Вызов замерщика" name="target">
                 <button class="form__submit" type="submit"><span>Вызвать замерщика</span><span class="arrow"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
                 <label class="form-checkbox">
                   <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
                     <svg class="icon icon-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                     </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
                 </label>
               </form>
@@ -681,9 +686,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 80 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Прямая закрытого типа"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -700,9 +705,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 70 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -719,9 +724,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 80 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -738,9 +743,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 100 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа прямая"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -757,9 +762,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 110 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -776,9 +781,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 120 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -795,9 +800,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 110 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур прямой"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -814,9 +819,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 120 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -833,9 +838,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 130 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -895,9 +900,9 @@
                   <div class="carcass__title">Прямая закрытого типа</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Прямая закрытого типа"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -913,9 +918,9 @@
                   <div class="carcass__title">Закрытого типа с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -931,9 +936,9 @@
                   <div class="carcass__title">Закрытого типа с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -949,9 +954,9 @@
                   <div class="carcass__title">Открытого типа прямая</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа прямая"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -967,9 +972,9 @@
                   <div class="carcass__title">Открытого типа с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -985,9 +990,9 @@
                   <div class="carcass__title">Открытого типа с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1003,9 +1008,9 @@
                   <div class="carcass__title">Монокосоур прямой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур прямой"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1021,9 +1026,9 @@
                   <div class="carcass__title">Монокосоур с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1039,9 +1044,9 @@
                   <div class="carcass__title">Монокосоур с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1063,9 +1068,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 8 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные реечные"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1082,9 +1087,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 5 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные квадратные"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1101,9 +1106,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 10 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из нержавеющей стали"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1120,9 +1125,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 7 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические ригельные"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1135,9 +1140,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 7 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1154,9 +1159,9 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 10 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из стекла"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                 </div>
               </div>
@@ -1183,7 +1188,7 @@
                 <div class="block__row"> 
                   <div class="row__icon"> 
                     <svg class="icon icon-marker ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#marker"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#marker"></use>
                     </svg>
                   </div>
                   <div class="row__info">улица Ленина, 76/5 Павловская Слобода, округ Истра</div>
@@ -1191,7 +1196,7 @@
                 <div class="block__row"> 
                   <div class="row__icon"> 
                     <svg class="icon icon-clock ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#clock"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#clock"></use>
                     </svg>
                   </div>
                   <div class="row__info">Работаем с 10:00 до 18:00</div>
@@ -1199,14 +1204,14 @@
                 <div class="block__row"> 
                   <div class="row__icon"> 
                     <svg class="icon icon-tel ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                     </svg>
                   </div>
                   <div class="row__info">Тел. +7(499) 555-55-55</div>
                 </div>
-                <div class="button room__btn call-trigger" type="button"><span class="value">Записаться Шоу-рум</span><span class="arrow"> 
+                <div class="button room__btn call-trigger" type="button" data-target="Запись на Шоу-рум"><span class="value">Записаться Шоу-рум</span><span class="arrow"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></div>
               </div>
             </div>
@@ -1252,12 +1257,12 @@
                 <div class="slider__buttons"> 
                   <div class="swiper-button-prevv">
                     <svg class="icon icon-slider ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
                     </svg>
                   </div>
                   <div class="swiper-button-nextt">
                     <svg class="icon icon-slider ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
                     </svg>
                   </div>
                 </div>
@@ -1278,14 +1283,14 @@
           <div class="roadmap__container"> 
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 1</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r1 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r1"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r1"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">ВЫЗОВИТЕ<br> ЗАМЕРЩИКА</div>
@@ -1298,14 +1303,14 @@
             </div>
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 2</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r2 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r2"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r2"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">СОЗДАЕМ <br>3D-МАКЕТ</div>
@@ -1318,14 +1323,14 @@
             </div>
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 3</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r3 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r3"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r3"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">ЗАКЛЮЧАЕМ <br>ДОГОВОР</div>
@@ -1338,14 +1343,14 @@
             </div>
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 4</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r4 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r4"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r4"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">ИЗГОТАВЛИВАЕМ<br> ЛЕСТНИЦУ</div>
@@ -1358,14 +1363,14 @@
             </div>
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 5</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r5 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r5"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r5"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">ДОСТАВЛЯЕМ <br>И СОБИРАЕМ</div>
@@ -1378,14 +1383,14 @@
             </div>
             <div class="roadmap__item active"> 
               <svg class="icon icon-pol ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#pol"></use>
               </svg>
               <div class="roadmap__inner"> 
                 <div class="inner__top">
                   <div class="roadmap__number">Шаг 6</div>
                   <div class="roadmap__icon"> 
                     <svg class="icon icon-r6 ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#r6"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#r6"></use>
                     </svg>
                   </div>
                   <div class="roadmap__name">ПОДПИСЫВАЕМ АКТ ПРИЕМА-ПЕРЕДАЧИ</div>
@@ -1419,7 +1424,7 @@
                 <div class="info__item"> 
                   <div class="info__mark"> 
                     <svg class="icon icon-mark-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
                     </svg>
                   </div>
                   <div class="info__text">Наша компания проектирует и строит лестницы на металло каркасе.</div>
@@ -1427,7 +1432,7 @@
                 <div class="info__item"> 
                   <div class="info__mark"> 
                     <svg class="icon icon-mark-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
                     </svg>
                   </div>
                   <div class="info__text">На нашем сайте представленны наши работы и цены. Вы можете посетить наше производство и оценить качество продукции и работ.</div>
@@ -1435,7 +1440,7 @@
                 <div class="info__item"> 
                   <div class="info__mark"> 
                     <svg class="icon icon-mark-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
                     </svg>
                   </div>
                   <div class="info__text">Мы выполняем заказы на изготовление лестниц любых размеров и вариантов конструкции, по типовым или индивидуальным проектам.</div>
@@ -1443,7 +1448,7 @@
                 <div class="info__item"> 
                   <div class="info__mark"> 
                     <svg class="icon icon-mark-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
                     </svg>
                   </div>
                   <div class="info__text">Посчитаем Ваш вариант конструкции буквально за 20 мин. Предоставим 3D-эскиз Вашей лестницы, чтобы вы увидел её со стороны, как она будет выглядеть.</div>
@@ -1451,7 +1456,7 @@
                 <div class="info__item"> 
                   <div class="info__mark"> 
                     <svg class="icon icon-mark-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mark-done"></use>
                     </svg>
                   </div>
                   <div class="info__text">При расчёте конструкции учитываются: размер, назначение лестницы, её местоположение и способ крепления</div>
@@ -1463,17 +1468,18 @@
                   <div class="form-item"> 
                     <input class=" number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
                     <svg class="icon icon-tel ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                     </svg>
                   </div>
+                  <input type="hidden" value="Посетить производство" name="target">
                   <button class="form__submit" type="submit"><span>Посетить производство</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
                   <label class="form-checkbox">
                     <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
                       <svg class="icon icon-done ">
-                        <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                       </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
                   </label>
                 </div>
@@ -1489,7 +1495,7 @@
                 <div class="map__row"> 
                   <div class="map__icon"> 
                     <svg class="icon icon-marker ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#marker"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#marker"></use>
                     </svg>
                   </div>
                   <div class="map__info"> 
@@ -1500,7 +1506,7 @@
                 <div class="map__row"> 
                   <div class="map__icon"> 
                     <svg class="icon icon-tel ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                     </svg>
                   </div>
                   <div class="map__info"> 
@@ -1510,7 +1516,7 @@
                 <div class="map__row"> 
                   <div class="map__icon"> 
                     <svg class="icon icon-document ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#document"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#document"></use>
                     </svg>
                   </div>
                   <div class="map__info"> 
@@ -1521,7 +1527,7 @@
                 <div class="map__row"> 
                   <div class="map__icon"> 
                     <svg class="icon icon-mail ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mail"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#mail"></use>
                     </svg>
                   </div>
                   <div class="map__info"> 
@@ -1545,24 +1551,25 @@
               <div class="faq__subtitle">Введите свой вопрос и <span>через 15 минут</span> с Вами свяжется наш специалист</div>
               <div class="form-item form-textarea"> 
                 <svg class="icon icon-mes ">
-                  <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#mes"></use>
+                  <use href="static/img/svg-sprites/symbol/sprite.svg#mes"></use>
                 </svg>
                 <textarea class="form-textarea form-required" placeholder="Ваш вопрос" name="message"></textarea>
               </div>
               <div class="form-item"> 
                 <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
                 <svg class="icon icon-tel ">
-                  <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                  <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                 </svg>
               </div>
               <button class="form__submit" type="submit"><span>Задать вопрос</span><span class="arrow"> 
                   <svg class="icon icon-arrow ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                   </svg></span></button>
+              <input type="hidden" value="Вопрос" name="target">
               <label class="form-checkbox">
                 <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
                   <svg class="icon icon-done ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                   </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
               </label>
             </div>
@@ -1572,7 +1579,7 @@
           <form class="form-container modal__container modal-call__container"> 
             <div class="modal__close"> 
               <svg class="icon icon-close-m ">
-                <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#close-m"></use>
+                <use href="static/img/svg-sprites/symbol/sprite.svg#close-m"></use>
               </svg>
             </div>
             <div class="modal__block"> 
@@ -1582,17 +1589,18 @@
                 <div class="form-item"> 
                   <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
                   <svg class="icon icon-tel ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                   </svg>
                 </div>
+                <input class="hidden__input" type="hidden" name="target">
                 <button class="form__submit modal-call-submit" type="submit"><span>Заказать звонок</span><span class="arrow"> 
                     <svg class="icon icon-arrow ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
                 <label class="form-checkbox">
                   <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
                     <svg class="icon icon-done ">
-                      <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                     </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
                 </label>
               </div>
@@ -1608,8 +1616,102 @@
               <div class="modal__text">Мы получили вашу заявку. Инженер свяжется с Вами в течении <span>10-15 минут.</span></div>
               <button class="form__submit modal-thanks-submit" type="button"><span>Вернуться на главную</span><span class="arrow"> 
                   <svg class="icon icon-arrow ">
-                    <use xlink:href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                   </svg></span></button>
+            </div>
+          </div>
+        </div>
+        <div class="modal-show"> 
+          <div class="modal__container"> 
+            <div class="modal__close"> 
+              <svg class="icon icon-close-m ">
+                <use href="static/img/svg-sprites/symbol/sprite.svg#close-m"></use>
+              </svg>
+            </div>
+            <div class="modal__block"> 
+              <div class="modal__slider"> 
+                <div class="swiper-container swiper___main-show">
+                  <div class="banner"> 
+                    <svg class="icon icon-loop ">
+                      <use href="static/img/svg-sprites/symbol/sprite.svg#loop"></use>
+                    </svg><span>Посмотреть ближе</span>
+                  </div>
+                  <div class="swiper-wrapper" id="lightgallery"> </div>
+                </div>
+                <div class="swiper__control-row">
+                  <div class="swiper-container swiper___thumb-show">
+                    <div class="swiper-wrapper"> </div>
+                  </div>
+                  <div class="swiper__control-buttons">
+                    <div class="swiper-button-prevv">
+                      <svg class="icon icon-slider ">
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
+                      </svg>
+                    </div>
+                    <div class="swiper-button-nextt">
+                      <svg class="icon icon-slider ">
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#slider"></use>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal__info">
+                <div class="info__block">
+                  <div class="borders"> </div>
+                  <div class="borders-two"> </div>
+                  <div class="block__title uniq-name">Лестница в КП Долина Озер</div>
+                  <div class="block__items"> 
+                    <div class="block__item"> <span class="item__value uniq-type">Лестница на металлокаркасе</span></div>
+                    <div class="block__item"> <span class="item__holder">Ступени: </span><span class="item__value uniq-stairs">ясень 40 мм</span></div>
+                    <div class="block__item"> <span class="item__holder">Конфигурация: </span><span class="item__value uniq-config">двойной косоур + площадка</span></div>
+                    <div class="block__item"> <span class="item__holder">Ограждения: </span><span class="item__value uniq-border">металлические</span></div>
+                    <div class="block__item"> <span class="item__holder">Материал: </span><span class="item__value uniq-material">профильная труба</span></div>
+                    <div class="block__item"> <span class="item__holder">Перила: </span><span class="item__value uniq-peril">Ясень</span></div>
+                    <div class="block__item"> <span class="item__holder">Высота лестницы: </span><span class="item__value uniq-height">3200 мм</span></div>
+                  </div>
+                </div>
+                <div class="info__stats"> 
+                  <div class="stat__item"> 
+                    <div class="stat__icon"> 
+                      <svg class="icon icon-piram ">
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#piram"></use>
+                      </svg>
+                    </div>
+                    <div class="stat__text"> 
+                      <div class="stat__holder">Каркас:</div>
+                      <div class="stat__value uniq-carcass_price">63 000 ₽</div>
+                    </div>
+                  </div>
+                  <div class="stat__item"> 
+                    <div class="stat__icon"> 
+                      <svg class="icon icon-tool ">
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#tool"></use>
+                      </svg>
+                    </div>
+                    <div class="stat__text"> 
+                      <div class="stat__holder">Обшивка:</div>
+                      <div class="stat__value uniq-sheating_price">164 600 ₽</div>
+                    </div>
+                  </div>
+                  <div class="stat__item"> 
+                    <div class="stat__icon"> 
+                      <svg class="icon icon-calc ">
+                        <use href="static/img/svg-sprites/symbol/sprite.svg#calc"></use>
+                      </svg>
+                    </div>
+                    <div class="stat__text"> 
+                      <div class="stat__holder">Итого:</div>
+                      <div class="stat__value uniq-all_price">227 600 ₽</div>
+                    </div>
+                  </div>
+                </div>
+                <button class="modal-show__btn" type="button"><span>УЗНАТЬ СТОИМОСТЬ ВАШЕЙ ЛЕСТНИЦЫ</span>
+                  <svg class="icon icon-arrow ">
+                    <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
+                  </svg>
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -1639,7 +1741,7 @@
       </footer>
       <!--include ../modules/menuGlobal-->
     </div>
-    <script src="static/js/libs.min.js?v=364"></script>
-    <script src="static/js/main.min.js?v=528"></script>
+    <script src="static/js/libs.min.js?v=608"></script>
+    <script src="static/js/main.min.js?v=359"></script>
   </body>
 </html>
