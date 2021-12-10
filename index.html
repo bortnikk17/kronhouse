@@ -17,8 +17,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
     <meta name="theme-color" content="#ffffff">
     <!-- CSS-->
-    <link rel="stylesheet" type="text/css" href="static/css/libs.min.css?v=376">
-    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=101">
+    <link rel="stylesheet" type="text/css" href="static/css/libs.min.css?v=955">
+    <link rel="stylesheet" type="text/css" href="static/css/main.min.css?v=575">
     <!-- - CSS links PROD
     link(rel="stylesheet preload" type='text/css' href="static/css/libs.min.css" as="style")
     link(rel="stylesheet preload" type='text/css' href="static/css/main.min.css" as="style")
@@ -38,13 +38,13 @@
                   <use href="static/img/svg-sprites/symbol/sprite.svg#close"></use>
                 </svg>
               </div>
-              <div class="header__links"> <a class="header__link anchor-trigger" href="#" data-target="works">Наши работы</a><a class="header__link anchor-trigger" href="#" data-target="material">Материалы</a><a class="header__link anchor-trigger" href="#" data-target="show">Шоу-рум</a><a class="header__link anchor-trigger" href="#" data-target="factory">Этапы производства</a><a class="header__link anchor-trigger" href="#" data-target="contact">Контакты</a></div>
+              <div class="header__links"> <a class="header__link anchor-trigger" href="#" data-target="works">Наши работы</a><a class="header__link anchor-trigger" href="#" data-target="material">Варианты лестниц</a><a class="header__link anchor-trigger" href="#" data-target="show">Шоу-рум</a><a class="header__link anchor-trigger" href="#" data-target="factory">Этапы производства</a><a class="header__link anchor-trigger" href="#" data-target="contact">Контакты</a></div>
               <div class="header__contacts-hide"><a class="header__number" href="tel:+7(499)555-55-55">+7(499) 555-55-55</a>
-                <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона">Перезвоните мне</button>
+                <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона" data-title="Перезвонить вам?">Перезвоните мне</button>
               </div>
             </div>
             <div class="header__contacts"> <a class="header__number" href="tel:+7(499)555-55-55">+7(499) 555-55-55</a>
-              <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона">Перезвоните мне</button>
+              <button class="header__call-btn call-trigger" type="button" data-target="Кнопка перезвона" data-title="Перезвонить вам?">Перезвоните мне</button>
             </div>
             <div class="header__burger"> </div>
           </div>
@@ -68,12 +68,12 @@
               <div class="hero__top"> 
                 <div class="borders"> </div>
                 <div class="borders-two"></div>
-                <div class="hero__title">Построим удобную и надёжную лестницу </div>
-                <div class="hero__subtitle">со сроком службы от <span>20 лет</span> и выгодой до <span>30 000 рублей</span> за <span>14 дней</span></div>
+                <h1 class="hero__title">Построим удобную и надёжную лестницу </h1>
+                <h3 class="hero__subtitle">со сроком службы от <span>20 лет</span> и выгодой до <span>30 000 рублей</span> за <span>14 дней</span></h3>
               </div>
               <div class="hero__bottom">
                 <div class="hero__text">Узнайте какая лестница идеально подойдет для вашего дома и сколько можно сэкономить именно в Вашем случае с помощью консультации и замера от специалиста с опытом строительства <span>293 лестниц!</span></div>
-                <button class="hero-consult__btn call-trigger" type="button" data-target="Кнопка консультации"> <span>Получить консультацию</span>
+                <button class="hero-consult__btn call-trigger" type="button" data-target="Кнопка консультации" data-title="Получить консультацию"> <span>Получить консультацию</span>
                   <svg class="icon icon-arrow ">
                     <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                   </svg>
@@ -120,7 +120,7 @@
           </div>
         </div>
         <div class="example anchor-block" data-target="works"> 
-          <div class="example__title">Посмотрите на лестницы которые мы построили</div>
+          <h2 class="example__title">Посмотрите на лестницы которые мы построили</h2>
           <div class="example__container"> 
             <div class="example__item"> 
               <picture class="back__img__image">
@@ -640,7 +640,7 @@
               <div class="help__order">Выезд замерщика всего <span>990 ₽</span></div>
               <form class="help__form form-container">
                 <div class="form-item"> 
-                  <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
+                  <input class="number-input form-required phone-input" type="text" mask="phone" name="number" placeholder="Ваш телефон">
                   <svg class="icon icon-tel ">
                     <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                   </svg>
@@ -650,8 +650,8 @@
                     <svg class="icon icon-arrow ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
-                <label class="form-checkbox">
-                  <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
+                <label class="form-checkbox active">
+                  <input class="check" type="checkbox" checked name="rules"><span class="check__retangle"> 
                     <svg class="icon icon-done ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                     </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
@@ -663,7 +663,7 @@
             </picture>
           </div>
         </div>
-        <div class="carcass"> 
+        <div class="carcass anchor-block" data-target="material"> 
           <div class="lines">
             <div class="line"></div>
             <div class="line"></div>
@@ -686,7 +686,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 80 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Прямая закрытого типа"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Прямая закрытого типа" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -705,7 +705,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 70 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с площадкой" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -724,7 +724,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 80 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Закрытого типа с забежными ступенями" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -743,7 +743,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 100 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа прямая"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа прямая" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -762,7 +762,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 110 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с площадкой" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -781,7 +781,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 120 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Открытого типа с забежными ступенями" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -800,7 +800,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 110 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур прямой"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур прямой" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -819,7 +819,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 120 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с площадкой"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с площадкой" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -838,7 +838,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 130 000 ₽</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с забежными ступенями"> <span>Заказать монтаж</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Монтаж, Каркас лестницы, Монокосоур с забежными ступенями" data-title="Заказать монтаж"> <span>Заказать монтаж</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -847,8 +847,8 @@
             </div>
           </div>
         </div>
-        <div class="sheathing anchor-block" data-target="material"> 
-          <div class="sheathing__title">Варианты обшивки каркаса</div>
+        <div class="sheathing">
+          <h2 class="sheathing__title">Варианты обшивки каркаса</h2>
           <div class="sheathing__subtitle">Используем только твёрдые породы дерева</div>
           <div class="sheathing__wood"> 
             <div class="wood__item"> 
@@ -900,7 +900,7 @@
                   <div class="carcass__title">Прямая закрытого типа</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Прямая закрытого типа"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Прямая закрытого типа" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -918,7 +918,7 @@
                   <div class="carcass__title">Закрытого типа с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с площадкой" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -936,7 +936,7 @@
                   <div class="carcass__title">Закрытого типа с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Закрытого типа с забежными ступенями" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -954,7 +954,7 @@
                   <div class="carcass__title">Открытого типа прямая</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа прямая"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа прямая" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -972,7 +972,7 @@
                   <div class="carcass__title">Открытого типа с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с площадкой" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -990,7 +990,7 @@
                   <div class="carcass__title">Открытого типа с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Открытого типа с забежными ступенями" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1008,7 +1008,7 @@
                   <div class="carcass__title">Монокосоур прямой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур прямой"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур прямой" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1026,7 +1026,7 @@
                   <div class="carcass__title">Монокосоур с площадкой</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с площадкой"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с площадкой" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1044,7 +1044,7 @@
                   <div class="carcass__title">Монокосоур с забежными ступенями</div>
                 </div>
                 <div class="item__bottom">
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с забежными ступенями"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Обшивка каркаса, Монокосоур с забежными ступенями" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1054,7 +1054,7 @@
           </div>
         </div>
         <div class="fence"> 
-          <div class="carcass__main-title">Как будут выглядить ограждения на лестнице</div>
+          <h2 class="carcass__main-title">Как будут выглядить ограждения на лестнице</h2>
           <div class="carcass__container">  
             <div class="carcass__item"> 
               <div class="item__inner">
@@ -1068,7 +1068,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 8 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные реечные"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные реечные" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1087,7 +1087,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 5 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные квадратные"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Деревянные квадратные" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1106,7 +1106,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 10 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из нержавеющей стали"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из нержавеющей стали" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1125,7 +1125,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 7 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические ригельные"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические ригельные" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1135,12 +1135,16 @@
             <div class="carcass__item"> 
               <div class="item__inner">
                 <div class="item__top">
-                  <div class="carcass__photo"> <img class="item__photo" src="./static/img/content/f5.png" alt="img"></div>
+                  <div class="carcass__photo"> 
+                    <picture class="item__photo__image">
+                      <source class="item__photo" srcset="static/img/content/f5.webp" type="image/webp"/><img class="item__photo" src="static/img/content/f5.png" loading="lazy" alt="img"/>
+                    </picture>
+                  </div>
                   <div class="carcass__title">Металлические</div>
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 7 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Металлические" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1159,7 +1163,7 @@
                 </div>
                 <div class="item__bottom">
                   <div class="carcass__price">от 10 000 ₽ / п.м</div>
-                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из стекла"> <span>Узнать стоимость</span><span class="arrow"> 
+                  <button class="carcass__item-btn call-trigger" type="button" data-target="Стоимость, Ограждениея, Из стекла" data-title="Узнать стоимость"> <span>Узнать стоимость</span><span class="arrow"> 
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
@@ -1179,7 +1183,7 @@
           </div>
           <div class="room__container"> 
             <div class="room__info"> 
-              <div class="room__title">Посетите наш Шоу-рум</div>
+              <h2 class="room__title">Посетите наш Шоу-рум</h2>
               <div class="room__subtitle">В котором мы поможем подобрать лестницу, которая подойдёт именно Вам.</div>
               <div class="room__block"> 
                 <div class="borders"> </div>
@@ -1209,7 +1213,7 @@
                   </div>
                   <div class="row__info">Тел. +7(499) 555-55-55</div>
                 </div>
-                <div class="button room__btn call-trigger" type="button" data-target="Запись на Шоу-рум"><span class="value">Записаться Шоу-рум</span><span class="arrow"> 
+                <div class="button room__btn call-trigger" type="button" data-target="Запись на Шоу-рум" data-title="Записаться на Шоу-рум"><span class="value">Записаться Шоу-рум</span><span class="arrow"> 
                     <svg class="icon icon-arrow ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></div>
@@ -1279,7 +1283,7 @@
             <div class="line"></div>
             <div class="line"></div>
           </div>
-          <div class="roadmap__title">Этапы производства</div>
+          <h2 class="roadmap__title">Этапы производства</h2>
           <div class="roadmap__container"> 
             <div class="roadmap__item"> 
               <svg class="icon icon-pol ">
@@ -1403,7 +1407,7 @@
           </div>
         </div>
         <div class="factory"> 
-          <div class="factory__title">Наше производство</div>
+          <h2 class="factory__title">Наше производство</h2>
           <div class="factory__row"> 
             <div class="factory__item"> 
               <picture class="factory__img__image">
@@ -1466,7 +1470,7 @@
                 <div class="form__inner">
                   <div class="form__title">Хотите посетить производство?</div>
                   <div class="form-item"> 
-                    <input class=" number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
+                    <input class=" number-input form-required phone-input" type="text" mask="phone" name="number" placeholder="Ваш телефон">
                     <svg class="icon icon-tel ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                     </svg>
@@ -1476,8 +1480,8 @@
                       <svg class="icon icon-arrow ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                       </svg></span></button>
-                  <label class="form-checkbox">
-                    <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
+                  <label class="form-checkbox active">
+                    <input class="check" type="checkbox" checked name="rules"><span class="check__retangle"> 
                       <svg class="icon icon-done ">
                         <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                       </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
@@ -1488,7 +1492,7 @@
           </div>
         </div>
         <div class="map anchor-block" data-target="contact"> 
-          <div class="map__title">Карты Яндекс</div>
+          <h2 class="map__title">Карты Яндекс</h2>
           <div class="map__container"> 
             <div class="map__block"> 
               <div class="block__inner"> 
@@ -1556,7 +1560,7 @@
                 <textarea class="form-textarea form-required" placeholder="Ваш вопрос" name="message"></textarea>
               </div>
               <div class="form-item"> 
-                <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
+                <input class="number-input form-required phone-input" type="text" mask="phone" name="number" placeholder="Ваш телефон">
                 <svg class="icon icon-tel ">
                   <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                 </svg>
@@ -1566,8 +1570,8 @@
                     <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                   </svg></span></button>
               <input type="hidden" value="Вопрос" name="target">
-              <label class="form-checkbox">
-                <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
+              <label class="form-checkbox active">
+                <input class="check" type="checkbox" checked name="rules"><span class="check__retangle"> 
                   <svg class="icon icon-done ">
                     <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                   </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
@@ -1587,7 +1591,7 @@
                 <div class="modal__title">перезвонить вам?</div>
                 <div class="modal__text">Введите ваши данные <span>и через 15 минут<span> с Вами свяжется наш специалист</div>
                 <div class="form-item"> 
-                  <input class="number-input form-required phone-input" type="text" name="number" placeholder="Ваш телефон">
+                  <input class="number-input form-required phone-input" type="text" mask="phone" name="number" placeholder="Ваш телефон">
                   <svg class="icon icon-tel ">
                     <use href="static/img/svg-sprites/symbol/sprite.svg#tel"></use>
                   </svg>
@@ -1597,8 +1601,8 @@
                     <svg class="icon icon-arrow ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#arrow"></use>
                     </svg></span></button>
-                <label class="form-checkbox">
-                  <input class="check" type="checkbox" name="rules"><span class="check__retangle"> 
+                <label class="form-checkbox active">
+                  <input class="check" type="checkbox" checked name="rules"><span class="check__retangle"> 
                     <svg class="icon icon-done ">
                       <use href="static/img/svg-sprites/symbol/sprite.svg#done"></use>
                     </svg></span><span class="check__text">Я согласен(а) с условиями передачи информации  </span>
@@ -1727,13 +1731,13 @@
             <ul class="footer__menu"> 
               <li> <a class="footer__link anchor-trigger" href="#" data-target="works">Наши работы</a></li>
               <li> <a class="footer__link anchor-trigger" href="#" data-target="factory">Этапы производства</a></li>
-              <li> <a class="footer__link anchor-trigger" href="#" data-target="material">Материалы</a></li>
+              <li> <a class="footer__link anchor-trigger" href="#" data-target="material">Варианты лестниц</a></li>
               <li> <a class="footer__link anchor-trigger" href="#" data-target="contact">Контакты</a></li>
               <li> <a class="footer__link anchor-trigger" href="#" data-target="show">Шоу-рум</a></li>
             </ul>
             <div class="footer__side"><a class="footer__logo" href="index.html"><img class="logo__img" src="./static/img/svg/logo.svg" alt="logo"></a>
               <div class="footer__contact"> <a class="header__number" href="tel:+7(499)555-55-55">+7(499) 555-55-55</a>
-                <button class="header__call-btn call-trigger" type="button">Перезвоните мне</button>
+                <button class="header__call-btn call-trigger" type="button" data-title="Перезвонить вам?">Перезвоните мне</button>
               </div>
             </div>
           </div>
@@ -1741,7 +1745,8 @@
       </footer>
       <!--include ../modules/menuGlobal-->
     </div>
-    <script src="static/js/libs.min.js?v=608"></script>
-    <script src="static/js/main.min.js?v=359"></script>
+    <script src="static/js/libs.min.js?v=20"></script>
+    <script src="static/js/main.min.js?v=579"></script>
+    <script type="text/javascript" src="https://rawgit.com/RobinHerbots/jquery.inputmask/3.x/dist/jquery.inputmask.bundle.js"></script>
   </body>
 </html>
